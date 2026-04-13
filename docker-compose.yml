@@ -1,0 +1,37 @@
+version: '3.9'
+
+services:
+  postgres-estoque:
+    image: postgres:16
+    container_name: postgres-estoque
+    environment:
+      POSTGRES_DB: korp_estoque
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_estoque_data:/var/lib/postgresql/data
+
+  postgres-faturamento:
+    image: postgres:16
+    container_name: postgres-faturamento
+    environment:
+      POSTGRES_DB: korp_faturamento
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_faturamento_data:/var/lib/postgresql/data
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+volumes:
+  postgres_estoque_data:
+  postgres_faturamento_data:

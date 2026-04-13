@@ -1,0 +1,33 @@
+<div class="page">
+  <div class="page-header">
+    <h2>Produtos</h2>
+    <a mat-raised-button color="primary" routerLink="/produtos/novo">Novo Produto</a>
+  </div>
+
+  <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+
+  <mat-card *ngIf="error" class="error-card">
+    {{ error }}
+  </mat-card>
+
+  <mat-card>
+    <div *ngIf="!loading && !produtos.length">Nenhum produto encontrado.</div>
+
+    <table class="full-width-table simple-table" *ngIf="produtos.length">
+      <thead>
+        <tr>
+          <th>Codigo</th>
+          <th>Descricao</th>
+          <th>Saldo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of produtos">
+          <td>{{ item.codigo }}</td>
+          <td>{{ item.descricao }}</td>
+          <td>{{ item.saldo }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </mat-card>
+</div>

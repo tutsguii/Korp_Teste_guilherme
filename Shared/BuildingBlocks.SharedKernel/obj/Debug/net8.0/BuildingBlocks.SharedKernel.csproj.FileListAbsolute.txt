@@ -1,0 +1,12 @@
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\bin\Debug\net8.0\BuildingBlocks.SharedKernel.deps.json
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\bin\Debug\net8.0\BuildingBlocks.SharedKernel.dll
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\bin\Debug\net8.0\BuildingBlocks.SharedKernel.pdb
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\obj\Debug\net8.0\BuildingBlocks.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\obj\Debug\net8.0\BuildingBlocks.SharedKernel.AssemblyInfoInputs.cache
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\obj\Debug\net8.0\BuildingBlocks.SharedKernel.AssemblyInfo.cs
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\obj\Debug\net8.0\BuildingBlocks.SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\obj\Debug\net8.0\BuildingBlocks.SharedKernel.dll
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\obj\Debug\net8.0\refint\BuildingBlocks.SharedKernel.dll
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\obj\Debug\net8.0\BuildingBlocks.SharedKernel.pdb
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\obj\Debug\net8.0\ref\BuildingBlocks.SharedKernel.dll
+C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\obj\Debug\net8.0\BuildingBlocks.SharedKernel.csproj.AssemblyReference.cache

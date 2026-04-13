@@ -1,0 +1,15 @@
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\obj\Debug\net8.0\Faturamento.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\obj\Debug\net8.0\Faturamento.Domain.AssemblyInfoInputs.cache
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\obj\Debug\net8.0\Faturamento.Domain.AssemblyInfo.cs
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\obj\Debug\net8.0\Faturamento.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\bin\Debug\net8.0\Faturamento.Domain.deps.json
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\bin\Debug\net8.0\Faturamento.Domain.dll
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\bin\Debug\net8.0\Faturamento.Domain.pdb
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\bin\Debug\net8.0\BuildingBlocks.SharedKernel.dll
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\bin\Debug\net8.0\BuildingBlocks.SharedKernel.pdb
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\obj\Debug\net8.0\Faturamento.Domain.csproj.AssemblyReference.cache
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\obj\Debug\net8.0\Faturame.5996CE69.Up2Date
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\obj\Debug\net8.0\Faturamento.Domain.dll
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\obj\Debug\net8.0\refint\Faturamento.Domain.dll
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\obj\Debug\net8.0\Faturamento.Domain.pdb
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Domain\obj\Debug\net8.0\ref\Faturamento.Domain.dll

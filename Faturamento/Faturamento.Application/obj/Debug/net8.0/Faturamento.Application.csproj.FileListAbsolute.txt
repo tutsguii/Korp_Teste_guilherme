@@ -1,0 +1,17 @@
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\bin\Debug\net8.0\Faturamento.Application.deps.json
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\bin\Debug\net8.0\Faturamento.Application.dll
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\bin\Debug\net8.0\Faturamento.Application.pdb
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\bin\Debug\net8.0\BuildingBlocks.SharedKernel.dll
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\bin\Debug\net8.0\Faturamento.Domain.dll
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\bin\Debug\net8.0\Faturamento.Domain.pdb
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\bin\Debug\net8.0\BuildingBlocks.SharedKernel.pdb
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\obj\Debug\net8.0\Faturamento.Application.csproj.AssemblyReference.cache
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\obj\Debug\net8.0\Faturamento.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\obj\Debug\net8.0\Faturamento.Application.AssemblyInfoInputs.cache
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\obj\Debug\net8.0\Faturamento.Application.AssemblyInfo.cs
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\obj\Debug\net8.0\Faturamento.Application.csproj.CoreCompileInputs.cache
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\obj\Debug\net8.0\Faturame.59106751.Up2Date
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\obj\Debug\net8.0\Faturamento.Application.dll
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\obj\Debug\net8.0\refint\Faturamento.Application.dll
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\obj\Debug\net8.0\Faturamento.Application.pdb
+C:\Users\Carvalho\source\repos\korp\Faturamento\Faturamento.Application\obj\Debug\net8.0\ref\Faturamento.Application.dll

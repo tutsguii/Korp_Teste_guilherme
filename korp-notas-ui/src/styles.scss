@@ -1,0 +1,44 @@
+@use '@angular/material' as mat;
+
+html {
+  height: 100%;
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette
+      ),
+      typography: Roboto,
+      density: 0
+    )
+  );
+}
+
+body {
+  color-scheme: light;
+  background:
+    radial-gradient(circle at top left, rgba(38, 166, 154, 0.12), transparent 28%),
+    radial-gradient(circle at top right, rgba(2, 136, 209, 0.12), transparent 24%),
+    linear-gradient(180deg, #f8fbfc 0%, #eef4f7 100%);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+  margin: 0;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}

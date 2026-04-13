@@ -1,0 +1,453 @@
+2026-04-13 10:20:04.925 -07:00 [ERR] Failed executing DbCommand (23ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO produtos ("Id", codigo, descricao, saldo)
+VALUES (@p0, @p1, @p2, @p3);
+2026-04-13 10:20:05.003 -07:00 [ERR] An exception occurred in the database while saving changes for context type 'Estoque.Infrastructure.Persistence.EstoqueDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_produtos_codigo"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_produtos_codigo"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: IX_produtos_codigo
+    File: nbtinsert.c
+    Line: 666
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_produtos_codigo"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_produtos_codigo"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: IX_produtos_codigo
+    File: nbtinsert.c
+    Line: 666
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-04-13 10:20:05.125 -07:00 [ERR] Erro inesperado. TraceId: 0HNKPG2LU3NMO:00000013
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_produtos_codigo"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_produtos_codigo"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: IX_produtos_codigo
+    File: nbtinsert.c
+    Line: 666
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Estoque.Api.Controllers.ProdutosController.Create(CriarProdutoRequest request) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Controllers\ProdutosController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at BuildingBlocks.SharedKernel.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2026-04-13 10:20:37.703 -07:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO produtos ("Id", codigo, descricao, saldo)
+VALUES (@p0, @p1, @p2, @p3);
+2026-04-13 10:20:37.708 -07:00 [ERR] An exception occurred in the database while saving changes for context type 'Estoque.Infrastructure.Persistence.EstoqueDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_produtos_codigo"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_produtos_codigo"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: IX_produtos_codigo
+    File: nbtinsert.c
+    Line: 666
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_produtos_codigo"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_produtos_codigo"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: IX_produtos_codigo
+    File: nbtinsert.c
+    Line: 666
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-04-13 10:20:37.789 -07:00 [ERR] Erro inesperado. TraceId: 0HNKPG2LU3NMO:00000015
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_produtos_codigo"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_produtos_codigo"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: IX_produtos_codigo
+    File: nbtinsert.c
+    Line: 666
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Estoque.Api.Controllers.ProdutosController.Create(CriarProdutoRequest request) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Controllers\ProdutosController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at BuildingBlocks.SharedKernel.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2026-04-13 11:43:35.825 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 11:43:35.895 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "87f64350-6555-4321-ad4b-0da9ae125667", CorrelationId: 31b83f4a-845e-4dd9-ae8e-0ef04ab02f32
+2026-04-13 12:38:49.604 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 12:38:49.646 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "db618a5e-ad30-43e4-8f61-0ab18a08a7cb", CorrelationId: 95a2897e-d811-494e-89d4-0ed916e26760
+2026-04-13 12:39:50.783 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 12:39:50.787 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "51899a90-fcb5-4a00-a484-bb3a3f192d14", CorrelationId: 7e48776e-adb8-43c5-a7fe-dee1b457dfe3
+2026-04-13 12:40:29.212 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 12:40:29.216 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "fe807346-bb4d-4d6d-9575-d5cf35f26af6", CorrelationId: 2638df75-9311-42d6-9d27-b77bfc3db25f
+2026-04-13 12:41:30.117 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 12:41:30.119 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "e273cc73-55a2-418c-8136-3e0afd38a946", CorrelationId: 00dc47e3-653e-41ca-a53f-946c347dd4c7
+2026-04-13 12:41:30.192 -07:00 [WRN] Falha ao baixar estoque da nota "e273cc73-55a2-418c-8136-3e0afd38a946": Saldo insuficiente.
+BuildingBlocks.SharedKernel.DomainException: Saldo insuficiente.
+   at Estoque.Domain.Entities.Produto.BaixarEstoque(Int32 quantidade) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\Entities\Produto.cs:line 64
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 146
+--- End of stack trace from previous location ---
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 162
+2026-04-13 12:41:35.880 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 12:41:35.881 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "e273cc73-55a2-418c-8136-3e0afd38a946", CorrelationId: 0eb43965-c208-410a-a186-7645727cb30d
+2026-04-13 12:41:35.927 -07:00 [WRN] Falha ao baixar estoque da nota "e273cc73-55a2-418c-8136-3e0afd38a946": Saldo insuficiente.
+BuildingBlocks.SharedKernel.DomainException: Saldo insuficiente.
+   at Estoque.Domain.Entities.Produto.BaixarEstoque(Int32 quantidade) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\Entities\Produto.cs:line 64
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 146
+--- End of stack trace from previous location ---
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 162
+2026-04-13 12:42:07.302 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 12:42:07.303 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "e273cc73-55a2-418c-8136-3e0afd38a946", CorrelationId: 1708ef6e-b481-472c-b8fb-af5c5fe129d3
+2026-04-13 12:42:07.343 -07:00 [WRN] Falha ao baixar estoque da nota "e273cc73-55a2-418c-8136-3e0afd38a946": Saldo insuficiente.
+BuildingBlocks.SharedKernel.DomainException: Saldo insuficiente.
+   at Estoque.Domain.Entities.Produto.BaixarEstoque(Int32 quantidade) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\Entities\Produto.cs:line 64
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 146
+--- End of stack trace from previous location ---
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 162
+2026-04-13 12:42:18.274 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 12:42:18.275 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "e273cc73-55a2-418c-8136-3e0afd38a946", CorrelationId: 3789dbe8-d78e-4373-af58-36085c6d80fc
+2026-04-13 12:42:18.326 -07:00 [WRN] Falha ao baixar estoque da nota "e273cc73-55a2-418c-8136-3e0afd38a946": Saldo insuficiente.
+BuildingBlocks.SharedKernel.DomainException: Saldo insuficiente.
+   at Estoque.Domain.Entities.Produto.BaixarEstoque(Int32 quantidade) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\Entities\Produto.cs:line 64
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 146
+--- End of stack trace from previous location ---
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 162
+2026-04-13 12:56:30.833 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 12:56:30.873 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "e273cc73-55a2-418c-8136-3e0afd38a946", CorrelationId: fd6893bb-a843-4027-896e-7ec679d16a59
+2026-04-13 13:08:53.690 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 13:08:53.692 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "1e082896-646d-4adc-8464-6012c836b91b", CorrelationId: c25b26f1-1607-4e7b-a9fd-27ba43f5d153
+2026-04-13 13:08:53.766 -07:00 [WRN] Falha ao baixar estoque da nota "1e082896-646d-4adc-8464-6012c836b91b": Saldo insuficiente.
+BuildingBlocks.SharedKernel.DomainException: Saldo insuficiente.
+   at Estoque.Domain.Entities.Produto.BaixarEstoque(Int32 quantidade) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\Entities\Produto.cs:line 64
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 146
+--- End of stack trace from previous location ---
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 162
+2026-04-13 13:09:06.734 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 13:09:06.735 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "1e082896-646d-4adc-8464-6012c836b91b", CorrelationId: fc7483b5-d481-4e6e-b689-4ca5a3b1ce2f
+2026-04-13 13:09:06.783 -07:00 [WRN] Falha ao baixar estoque da nota "1e082896-646d-4adc-8464-6012c836b91b": Saldo insuficiente.
+BuildingBlocks.SharedKernel.DomainException: Saldo insuficiente.
+   at Estoque.Domain.Entities.Produto.BaixarEstoque(Int32 quantidade) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\Entities\Produto.cs:line 64
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 146
+--- End of stack trace from previous location ---
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 162
+2026-04-13 13:09:19.723 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 13:09:19.724 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "1e082896-646d-4adc-8464-6012c836b91b", CorrelationId: e3ceb963-f6e2-4eeb-904b-6376c0507278
+2026-04-13 13:19:31.145 -07:00 [ERR] Failed executing DbCommand (17ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO produtos ("Id", codigo, descricao, saldo)
+VALUES (@p0, @p1, @p2, @p3);
+2026-04-13 13:19:31.212 -07:00 [ERR] An exception occurred in the database while saving changes for context type 'Estoque.Infrastructure.Persistence.EstoqueDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_produtos_codigo"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_produtos_codigo"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: IX_produtos_codigo
+    File: nbtinsert.c
+    Line: 666
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_produtos_codigo"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_produtos_codigo"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: IX_produtos_codigo
+    File: nbtinsert.c
+    Line: 666
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-04-13 13:19:31.332 -07:00 [ERR] Erro inesperado. TraceId: 0HNKPJ7LD6S0H:00000005
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_produtos_codigo"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_produtos_codigo"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: IX_produtos_codigo
+    File: nbtinsert.c
+    Line: 666
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Estoque.Api.Controllers.ProdutosController.Create(CriarProdutoRequest request) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Controllers\ProdutosController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at BuildingBlocks.SharedKernel.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Carvalho\source\repos\korp\Shared\BuildingBlocks.SharedKernel\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2026-04-13 13:19:54.002 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 13:19:54.004 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "c54b57ee-0609-4c46-ba78-f259b6de5cd6", CorrelationId: 1b776c15-7990-43f5-85eb-5a06e5f50015
+2026-04-13 13:19:54.116 -07:00 [WRN] Falha ao baixar estoque da nota "c54b57ee-0609-4c46-ba78-f259b6de5cd6": Saldo insuficiente.
+BuildingBlocks.SharedKernel.DomainException: Saldo insuficiente.
+   at Estoque.Domain.Entities.Produto.BaixarEstoque(Int32 quantidade) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\Entities\Produto.cs:line 63
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 146
+--- End of stack trace from previous location ---
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 162
+2026-04-13 13:20:03.708 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 13:20:03.710 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "c54b57ee-0609-4c46-ba78-f259b6de5cd6", CorrelationId: 3ed1bbe7-a35b-42ca-b4ac-51b0b6173d51
+2026-04-13 13:20:03.763 -07:00 [WRN] Falha ao baixar estoque da nota "c54b57ee-0609-4c46-ba78-f259b6de5cd6": Saldo insuficiente.
+BuildingBlocks.SharedKernel.DomainException: Saldo insuficiente.
+   at Estoque.Domain.Entities.Produto.BaixarEstoque(Int32 quantidade) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\Entities\Produto.cs:line 63
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 146
+--- End of stack trace from previous location ---
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 162
+2026-04-13 13:20:20.912 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 13:20:20.913 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "c54b57ee-0609-4c46-ba78-f259b6de5cd6", CorrelationId: 13781047-f176-43d8-931c-dbdff41a76aa
+2026-04-13 13:26:37.885 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 13:26:37.920 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "985f1e65-cf24-4532-8336-52e9a146b69b", CorrelationId: 7cd800e5-2ac9-4f14-9526-92a1e3da34e5
+2026-04-13 13:26:38.040 -07:00 [WRN] Falha ao baixar estoque da nota "985f1e65-cf24-4532-8336-52e9a146b69b": Saldo insuficiente.
+BuildingBlocks.SharedKernel.DomainException: Saldo insuficiente.
+   at Estoque.Domain.Entities.Produto.BaixarEstoque(Int32 quantidade) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\Entities\Produto.cs:line 63
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 146
+--- End of stack trace from previous location ---
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 162
+2026-04-13 13:26:48.874 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 13:26:48.881 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "985f1e65-cf24-4532-8336-52e9a146b69b", CorrelationId: c0cebdb4-2684-4571-8ac8-fb801ceeeb6f
+2026-04-13 13:37:12.242 -07:00 [INF] Mensagem recebida para baixa de estoque.
+2026-04-13 13:37:12.276 -07:00 [INF] Processando baixa de estoque. NotaFiscalId: "8afe71a2-2d3e-43f9-b7e8-b4e37dce5ac7", CorrelationId: b9a91121-dd83-4c67-9bfb-560d19b12aa6
+2026-04-13 13:37:12.440 -07:00 [WRN] Falha ao baixar estoque da nota "8afe71a2-2d3e-43f9-b7e8-b4e37dce5ac7": Saldo insuficiente.
+BuildingBlocks.SharedKernel.DomainException: Saldo insuficiente.
+   at Estoque.Domain.Entities.Produto.BaixarEstoque(Int32 quantidade) in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\Entities\Produto.cs:line 63
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 146
+--- End of stack trace from previous location ---
+   at Estoque.Api.Consumers.NotaFechamentoSolicitadoConsumer.<>c__DisplayClass10_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Api\Consumers\NotaFechamentoSolicitadoConsumer.cs:line 162

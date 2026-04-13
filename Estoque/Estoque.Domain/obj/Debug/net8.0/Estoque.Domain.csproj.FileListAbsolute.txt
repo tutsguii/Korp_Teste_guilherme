@@ -1,0 +1,15 @@
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\obj\Debug\net8.0\Estoque.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\obj\Debug\net8.0\Estoque.Domain.AssemblyInfoInputs.cache
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\obj\Debug\net8.0\Estoque.Domain.AssemblyInfo.cs
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\obj\Debug\net8.0\Estoque.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\bin\Debug\net8.0\Estoque.Domain.deps.json
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\bin\Debug\net8.0\Estoque.Domain.dll
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\bin\Debug\net8.0\Estoque.Domain.pdb
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\bin\Debug\net8.0\BuildingBlocks.SharedKernel.dll
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\bin\Debug\net8.0\BuildingBlocks.SharedKernel.pdb
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\obj\Debug\net8.0\Estoque.Domain.csproj.AssemblyReference.cache
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\obj\Debug\net8.0\Estoque..4100242B.Up2Date
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\obj\Debug\net8.0\Estoque.Domain.dll
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\obj\Debug\net8.0\refint\Estoque.Domain.dll
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\obj\Debug\net8.0\Estoque.Domain.pdb
+C:\Users\Carvalho\source\repos\korp\Estoque\Estoque.Domain\obj\Debug\net8.0\ref\Estoque.Domain.dll

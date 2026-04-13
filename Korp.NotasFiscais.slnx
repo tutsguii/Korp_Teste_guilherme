@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Estoque/">
+    <Project Path="Estoque/Estoque.Api/Estoque.Api.csproj" />
+    <Project Path="Estoque/Estoque.Application/Estoque.Application.csproj" />
+    <Project Path="Estoque/Estoque.Domain/Estoque.Domain.csproj" />
+    <Project Path="Estoque/Estoque.Infrastructure/Estoque.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Faturamento/">
+    <Project Path="Faturamento/Faturamento.Api/Faturamento.Api.csproj" />
+    <Project Path="Faturamento/Faturamento.Application/Faturamento.Application.csproj" />
+    <Project Path="Faturamento/Faturamento.Domain/Faturamento.Domain.csproj" />
+    <Project Path="Faturamento/Faturamento.Infrastructure/Faturamento.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="Shared/BuildingBlocks.SharedKernel/BuildingBlocks.SharedKernel.csproj" />
+  </Folder>
+</Solution>

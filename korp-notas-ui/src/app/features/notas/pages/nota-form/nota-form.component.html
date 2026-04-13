@@ -1,0 +1,18 @@
+<div class="page">
+  <h2>Nova Nota Fiscal</h2>
+
+  <mat-card>
+    <form (ngSubmit)="salvar()">
+      <p>A numeracao da nota sera gerada automaticamente pelo sistema.</p>
+
+      <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+
+      <div *ngIf="error" class="error-message">{{ error }}</div>
+
+      <div class="actions">
+        <button mat-button type="button" routerLink="/notas">Cancelar</button>
+        <button mat-raised-button color="primary" type="submit">Criar Nota</button>
+      </div>
+    </form>
+  </mat-card>
+</div>

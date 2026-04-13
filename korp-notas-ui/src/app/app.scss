@@ -1,0 +1,72 @@
+.container {
+  padding: 24px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.actions-inline {
+  display: flex;
+  align-items: center;
+}
+
+.full-width-table {
+  width: 100%;
+}
+
+.simple-table {
+  border-collapse: collapse;
+}
+
+.simple-table th,
+.simple-table td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 12px 8px;
+  text-align: left;
+}
+
+.simple-table th {
+  font-weight: 600;
+}
+
+.debug-line {
+  color: #455a64;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.error-card,
+.error-message {
+  color: #b00020;
+}
+
+.success-card {
+  color: #1b5e20;
+}

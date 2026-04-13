@@ -1,0 +1,37 @@
+<div class="page">
+  <div class="page-header">
+    <h2>Notas Fiscais</h2>
+    <a mat-raised-button color="primary" routerLink="/notas/nova">Nova Nota</a>
+  </div>
+
+  <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+
+  <mat-card *ngIf="error" class="error-card">
+    {{ error }}
+  </mat-card>
+
+  <mat-card>
+    <div *ngIf="!loading && !notas.length">Nenhuma nota encontrada.</div>
+
+    <table class="full-width-table simple-table" *ngIf="notas.length">
+      <thead>
+        <tr>
+          <th>Numero</th>
+          <th>Status</th>
+          <th>Data</th>
+          <th>Acoes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of notas">
+          <td>{{ item.numero }}</td>
+          <td>{{ getStatusLabel(item.status) }}</td>
+          <td>{{ item.dataCriacao | date: 'dd/MM/yyyy HH:mm' }}</td>
+          <td>
+            <button mat-button color="primary" (click)="abrirDetalhe(item.id)">Detalhes</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </mat-card>
+</div>
