@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# Korp_Teste_SeuNome
-=======
-# Korp_Teste_Carvalho
+
 
 Aplicacao de emissao de notas fiscais com arquitetura de microsservicos, composta por:
 
